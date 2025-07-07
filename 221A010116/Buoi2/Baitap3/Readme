@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 4</title>
+  </head>
+  <body>
+    <div>
+      <h1>Trang tin tức hằng ngày</h1>
+      <ul>
+        <li>
+          <a
+            href="https://plo.vn/tong-bi-thu-to-lam-co-chinh-sach-dac-biet-thu-hut-it-nhat-100-chuyen-gia-hang-dau-ve-nuoc-post858940.html"
+            >Tin tức 1</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.vietnamplus.vn/indonesia-nui-lua-lewotobi-laki-laki-phun-tro-bui-cao-toi-18km-post1048324.vnp"
+            >Tin tức 2</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.qdnd.vn/chinh-tri/tin-tuc/thuong-truc-ban-bi-thu-tran-cam-tu-tiep-xuc-cu-tri-tai-lao-cai-835949"
+            >Tin tức 3</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tiêu đề tin tức số 1</h2>
+      <p>Đây là nội dung tin tức số 1</p>
+      <p>Đăng ngày: 06/10/2024</p>
+    </div>
+    <div>
+      <h2>Tiêu đề tin tức số 2</h2>
+      <p>Đây là nội dung tin tức số 2</p>
+      <p>Đăng ngày: 07/10/2024</p>
+    </div>
+    <div>
+      <h2>Tiêu đề tin tức số 3</h2>
+      <p>Đây là nội dung tin tức số 3</p>
+      <p>Đăng ngày: 08/10/2024</p>
+    </div>
+    <p>Bản quyền © 2024 - Trang tin tức hằng ngày.Mọi quyền được bảo lưu</p>
+  </body>
+</html>
