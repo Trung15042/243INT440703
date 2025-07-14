@@ -13,11 +13,11 @@
             padding: 10px 0;
             font-family: Arial, sans-serif;
             width: 100%;
-            box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+            box-sizing: border-box; 
         }
 
         .navbar a {
-            display: inline-block; /* Hiển thị inline nhưng giữ chiều cao */
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -26,22 +26,21 @@
         }
 
         .navbar a:hover {
-            background-color: green; /* Nền đổi thành xanh khi hover */
+            background-color: green; 
             color: white;
         }
 
         .navbar a.active {
-            background-color: green; /* Mục HTML mặc định có nền xanh */
-            color: white;
+            background-color: green; 
         }
 
-        /* Ẩn thanh cuộn trên trình duyệt hiện đại */
+        /* Ẩn thanh cuộn*/
         .navbar::-webkit-scrollbar {
-            display: none; /* Ẩn thanh cuộn trên Chrome, Safari, Edge */
+            display: none; 
         }
         .navbar {
-            -ms-overflow-style: none; /* Ẩn trên IE và Edge */
-            scrollbar-width: none; /* Ẩn trên Firefox */
+            -ms-overflow-style: none; 
+            scrollbar-width: none;
         }
     </style>
 </head>
