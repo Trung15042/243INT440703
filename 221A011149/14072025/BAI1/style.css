@@ -1,0 +1,20 @@
+.navbar1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+}
+
+.navbar1 p {
+    padding: 10px 20px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar1 p:hover {
+    background-color: green;
+    /* Change background on hover */
+}

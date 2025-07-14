@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai2</title>
+  <style>
+    .container {
+      background-color: #2f3d4c;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .question {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .option {
+        display: block;
+      background-color: #3d4c5a;
+      padding: 12px 15px;
+      margin: 8px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .option:hover {
+      background-color: #00bfff;
+      color: white;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      display: block;
+      background-color: #00b359;
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin: 20px auto 0;
+      cursor: pointer;
+    }
+
+    .see-all {
+      display: inline-block;
+      background-color: #00cc66;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 40px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Exercise</h2>
+    <div class="question">What is a correct syntax for an HTML hyperlink?</div>
+
+    <label class="option">
+      <input type="radio" name="answer">
+      &lt;a href='/home.htm'&gt;Visit W3Schools.com!&lt;/a&gt;
+    </label>
+
+    <label class="option">
+      <input type="radio" name="answer">
+      &lt;link href='/home.htm'&gt;Visit W3Schools.com!&lt;/link&gt;
+    </label>
+
+    <label class="option">
+      <input type="radio" name="answer">
+      &lt;alink href='/home.htm'&gt;Visit W3Schools.com!&lt;/alink&gt;
+    </label>
+
+    <button class="submit-btn">Submit Answer »</button>
+  </div>
+
+  <a class="see-all" href="#">See all HTML Exercises</a>
+
+</body>
+</html>

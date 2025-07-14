@@ -1,0 +1,157 @@
+/* --- Cài đặt chung & Reset --- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Bố cục chính --- */
+.container {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-section {
+    background-image: url('bg_lg.png');
+    /* Đảm bảo bạn có file ảnh này */
+    background-size: cover;
+    background-position: center;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    /* Nền xám nhạt bên ngoài khối */
+}
+
+.form-wrapper {
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+}
+
+/* --- Định dạng các thành phần form --- */
+.logo-header img {
+    max-width: 60px;
+}
+
+.university-name {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Thêm đoạn này để tạo khối trắng cho form */
+.login-form {
+    background-color: #fff;
+    /* Nền trắng cho khối */
+    padding: 2rem;
+    /* Khoảng cách từ nội dung đến viền khối */
+    border-radius: 8px;
+    /* Bo tròn các góc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng */
+    text-align: left;
+    /* Căn lề trái cho nội dung bên trong */
+}
+
+/* Căn giữa lại các tiêu đề */
+.login-form h2,
+.login-form .sub-heading {
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    /* Chia đều không gian cho 2 input */
+}
+
+/* Hàng chứa checkbox */
+.checkbox-container {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    margin-left: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Định dạng chung cho các nút */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #003366;
+    color: white;
+    border: 1px solid #003366;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Link và footer */
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #999;
+}
