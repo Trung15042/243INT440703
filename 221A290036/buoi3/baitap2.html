@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bài tập 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 10px 20px;
+      border-bottom: 2px solid #0071bc;
+    }
+    header img {
+      height: 60px;
+    }
+    header .info {
+      text-align: right;
+    }
+    header .info p {
+      margin: 2px 0;
+      color: #0071bc;
+    }
+    h1 {
+      margin: 30px;
+    }
+    .quiz-container {
+      background: #2c3e50;
+      color: #ecf0f1;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .quiz-container h2 {
+      margin-top: 0;
+    }
+    .option {
+      display: flex;
+      align-items: flex-start;
+      background: #34495e;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .option input {
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+    .option code {
+      display: block;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .btn {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #2ecc71;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .see-all {
+      display: block;
+      background: #04703e;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin: 30px auto;
+      padding: 10px 20px;
+      width: fit-content;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/9f/Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_V%C4%83n_Hi%E1%BA%BFn.svg/800px-Logo_tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_V%C4%83n_Hi%E1%BA%BFn.svg.png" alt="Logo VHU">
+    </div>
+    <div class="info">
+      <p>HOTLINE: <strong>18001568</strong></p>
+      <p><a href="https://www.vhu.edu.vn" target="_blank">www.vhu.edu.vn</a></p>
+    </div>
+  </header>
+
+  <h1>Bài tập 2</h1>
+
+  <div class="quiz-container">
+    <h2>Exercise</h2>
+    <p>What is a correct syntax for an HTML hyperlink?</p>
+
+    <label class="option">
+      <input type="radio" name="answer" value="correct">
+      <code>&lt;a href='/home.htm'&gt;Visit W3Schools.com!&lt;/a&gt;</code>
+    </label>
+    <label class="option">
+      <input type="radio" name="answer" value="wrong">
+      <code>&lt;link href='/home.htm'&gt;Visit W3Schools.com!&lt;/link&gt;</code>
+    </label>
+    <label class="option">
+      <input type="radio" name="answer" value="wrong">
+      <code>&lt;alink href='/home.htm'&gt;Visit W3Schools.com!&lt;/alink&gt;</code>
+    </label>
+
+    <button class="btn" onclick="checkAnswer()">Submit Answer »</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <a class="see-all" href="#">See all HTML Exercises</a>
+
+  <footer>
+    A member of HungHau
+  </footer>
+
+  <script>
+    function checkAnswer() {
+      const selected = document.querySelector('input[name="answer"]:checked');
+      const result = document.getElementById('result');
+      if (!selected) {
+        result.textContent = "Vui lòng chọn một đáp án!";
+        result.style.color = "orange";
+        return;
+      }
+      if (selected.value === "correct") {
+        result.textContent = "Chính xác! ✅";
+        result.style.color = "lightgreen";
+      } else {
+        result.textContent = "Sai rồi! ❌";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
