@@ -1,0 +1,18 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+
+h1:hover,
+p:hover,
+div:hover,
+span:hover {
+    background-color: lightblue; 
+    color: black;
+    cursor: pointer; 
+    padding: 2px 5px;
+    border-radius: 3px; 
+}

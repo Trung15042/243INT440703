@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập VHU</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.95); /* Làm nền form trắng đục */
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 10px;
+      width: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004c97;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #004c97;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f0f5ff;
+    }
+
+    .checkbox {
+      margin: 10px 0;
+    }
+
+    .checkbox label {
+      font-weight: normal;
+    }
+
+    .btn-login {
+      background-color: #003d7c;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-login:hover {
+      background-color: #002f5e;
+    }
+
+    .btn-office {
+      margin-top: 10px;
+      padding: 12px;
+      background-color: white;
+      color: #d83b01;
+      font-weight: bold;
+      border: 1px solid #d83b01;
+      width: 100%;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .btn-office:hover {
+      background-color: #fff3f0;
+    }
+
+    .office-logo {
+      width: 20px;
+      height: 20px;
+    }
+
+    .forgot {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .forgot a {
+      text-decoration: none;
+      color: #004c97;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 🔽 Logo -->
+    <img class="logo" src="//upload.wikimedia.org/wikipedia/commons/4/40/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_H%E1%BB%8Dc_V%C4%83n_Hi%E1%BA%BFn.png" alt="Logo VHU">
+
+    <!-- 🔽 Tiêu đề -->
+    <h1>TRƯỜNG ĐẠI HỌC VĂN HIẾN</h1>
+    <h2>ĐĂNG NHẬP</h2>
+    <p>Cổng thông tin đào tạo</p>
+
+    <!-- 🔽 Form đăng nhập -->
+    <form>
+      <label for="username">Tên đăng nhập</label>
+      <input type="text" id="username" placeholder="Nhập mã sinh viên">
+
+      <label for="password">Mật khẩu</label>
+      <input type="password" id="password" placeholder="Nhập mật khẩu">
+
+      <div class="checkbox">
+        <input type="checkbox" id="parent">
+        <label for="parent">Phụ huynh sinh viên đăng nhập</label>
+      </div>
+
+      <button class="btn-login" type="submit">Đăng nhập</button>
+
+      <button class="btn-office" type="button">
+        <img class="office-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Office Logo">
+        Đăng nhập Office 365
+      </button>
+    </form>
+
+    <!-- 🔽 Quên mật khẩu -->
+    <div class="forgot">
+      <a href="#">Quên mật khẩu</a>
+    </div>
+  </div>
+</body>
+</html>
