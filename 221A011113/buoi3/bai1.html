@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thanh Điều Hướng Full Width</title>
+    <style>
+        .navbar {
+            background-color: #333; 
+            display: flex;
+            overflow-x: auto; 
+            white-space: nowrap; 
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+        }
+
+        .navbar a {
+            display: inline-block; /* Hiển thị inline nhưng giữ chiều cao */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: green; /* Nền đổi thành xanh khi hover */
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: green; /* Mục HTML mặc định có nền xanh */
+            color: white;
+        }
+
+        /* Ẩn thanh cuộn trên trình duyệt hiện đại */
+        .navbar::-webkit-scrollbar {
+            display: none; /* Ẩn thanh cuộn trên Chrome, Safari, Edge */
+        }
+        .navbar {
+            -ms-overflow-style: none; /* Ẩn trên IE và Edge */
+            scrollbar-width: none; /* Ẩn trên Firefox */
+        }
+    </style>
 </head>
 <body>
-    <h1> style='font'    </h1>
+    <div class="navbar">
+        <a href="#" class="active">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="#">SQL</a>
+        <a href="#">PYTHON</a>
+        <a href="#">JAVA</a>
+        <a href="#">PHP</a>
+        <a href="#">HOW TO</a>
+        <a href="#">W3.CSS</a>
+        <a href="#">C</a>
+        <a href="#">C++</a>
+        <a href="#">C#</a>
+        <a href="#">BOOTSTRAP</a>
+        <a href="#">REACT</a>
+        <a href="#">MYSQL</a>
+        <a href="#">JQUERY</a>
+        <a href="#">EXCEL</a>
+        <a href="#">XML</a>
+    </div>
 </body>
 </html>
