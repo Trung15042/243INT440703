@@ -1,0 +1,45 @@
+.container {
+    padding: 5px;
+    background-color: rgb(12, 33, 33);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+
+.container h1 {
+    font-size: 3em;
+
+}
+
+.container p {
+    font-size: 2em;
+}
+
+.container .Answer {
+    font-size: 1.5em;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(141, 139, 139);
+    padding: 10px 10px;
+    margin: 4px;
+}
+
+.container .Answer:hover {
+    background-color: rgb(176, 172, 172);
+}
+
+button {
+    margin: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.3em;
+    background-color: rgb(24, 249, 24);
+}
+
+button:hover {
+    background-color: rgb(11, 114, 11);
+}
